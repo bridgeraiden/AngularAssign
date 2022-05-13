@@ -1,0 +1,17 @@
+
+<h3 style="background-color: #008CBA; width: 100px;">Cart</h3>
+
+<p style="font-size: 20px;">Here is what is in your cart!</p>
+
+<div class="cart-product" *ngFor="let item of items">
+  <p>Product ID: {{item.id}}</p>
+  <p>Product Name: {{item.name}}</p>
+  <p>Product Price: {{item.price}}</p>
+  <button type="button" (click)="clearCart()">Remove from cart</button>
+</div>
+
+<div>
+<button class="button" (click)="onSubmit()">Complete My Purchase</button>
+  </div>
+
+

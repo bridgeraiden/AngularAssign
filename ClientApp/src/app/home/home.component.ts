@@ -12,6 +12,7 @@ export class HomeComponent {
   constructor(private shoppingService: ShoppingService) {
     this.shoppingService.getProducts().subscribe(result => {
       this.products = result;
+      console.log(result);
     })
   }
 }

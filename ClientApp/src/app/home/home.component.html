@@ -1,4 +1,6 @@
-<h1>The phone/tablet online kiosk</h1>
+<h1>The Phone/Tablet Online Kiosk</h1>
 <p>These are the products that are available for purchase:</p>
-
-<app-product-item *ngFor=" let item of products" [product] = "Item"></app-product-item>
+<div style="text-align: right;">
+<button routerLink="/cart" button="button cart" style="border-radius: 8px; background-color: #008CBA; ">Shopping Cart</button>
+  </div>
+<app-product-item *ngFor=" let item of products" [product] = "item"></app-product-item>
